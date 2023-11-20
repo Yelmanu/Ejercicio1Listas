@@ -9,10 +9,12 @@ namespace Ejercicio1Listas.Controladores
         {
             //Declaramos la lista para guardar los datos del cliente
             List<ClienteDto> listaClientes = new List<ClienteDto>();
+            List<CuentaBancariaDto> listaCuentas = new List<CuentaBancariaDto>();
 
             //Instanciamos la clase donde se encuentran los métodos 
             MenuInterfaz mi = new MenuImplementacion();
             ClienteInterfaz sci = new ClienteImplementacion();
+            CuentaBancariaInterfaz cbi = new CuentaBancariaImplementacion();
 
             //Declaramos las variables para controlar el menú
             bool cerrarMenu = false;
@@ -35,6 +37,14 @@ namespace Ejercicio1Listas.Controladores
                         foreach (ClienteDto cliente in listaClientes)
                         {
                             Console.WriteLine(cliente.ToString());
+                        }
+                        break;
+                    case 2:
+                        Console.WriteLine("[INFO] ALTA NUEVA CUENTA BANCARIA");
+                        cbi.darAltaCuentaBancaria(listaCuentas);
+                        foreach(CuentaBancariaDto cuentaBancaria in listaCuentas)
+                        {
+                            Console.WriteLine(cuentaBancaria.ToString());
                         }
                         break;
                 }

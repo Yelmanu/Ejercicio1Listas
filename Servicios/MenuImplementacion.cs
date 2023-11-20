@@ -17,10 +17,11 @@ namespace Ejercicio1Listas.Servicios
             int opcionIntroducida;
 
             Console.WriteLine("Seleccione una opcion: ");
-            Console.WriteLine("|----------------------------|");
-            Console.WriteLine("|0. Cerrar aplicación        |");
-            Console.WriteLine("|1. Darse de alta            |");
-            Console.WriteLine("|----------------------------|");
+            Console.WriteLine("|---------------------------------|");
+            Console.WriteLine("|0. Cerrar aplicación             |");
+            Console.WriteLine("|1. Dar de alta cliente           |");
+            Console.WriteLine("|2. Dar de alta cuenta bancaria   |");
+            Console.WriteLine("|---------------------------------|");
 
             opcionIntroducida = Console.ReadKey(true).KeyChar - ('0');
 
