@@ -31,8 +31,6 @@ namespace Ejercicio1Listas.Servicios
             nuevaCuenta.IdCuentaBancaria = Convert.ToInt64(Console.ReadLine());
             Console.WriteLine("Introduzca el IBAN: ");
             nuevaCuenta.IbanCuentaBancaria = Console.ReadLine();
-            Console.WriteLine("Introduzca el código SWIFT/BIC: ");
-            nuevaCuenta.SwiftCuentaBancaria = Console.ReadLine();
             Console.WriteLine("Introduzca el DNI del cliente asociado a la cuenta: ");
             nuevaCuenta.DniClienteAsociado = Console.ReadLine();
             Console.WriteLine("Introduzca la fecha de alta: ");

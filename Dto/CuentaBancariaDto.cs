@@ -14,7 +14,7 @@ namespace Ejercicio1Listas.Dto
 
         private string ibanCuentaBancaria = "aaaa";
 
-        private string swiftCuentaBancaria = "aaaa";
+        private string swiftCuentaBancaria = "CSI1SSXX";
 
         private string fechaAlta = "9999/12/31";
 
