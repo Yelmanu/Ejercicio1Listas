@@ -18,7 +18,7 @@ namespace Ejercicio1Listas.Servicios
 
             Console.WriteLine("Seleccione una opcion: ");
             Console.WriteLine("|----------------------------|");
-            Console.WriteLine("|0. Cerrar aplicación         |");
+            Console.WriteLine("|0. Cerrar aplicación        |");
             Console.WriteLine("|1. Darse de alta            |");
             Console.WriteLine("|----------------------------|");
 

@@ -31,7 +31,11 @@ namespace Ejercicio1Listas.Controladores
                         break;
                     case 1:
                         Console.WriteLine("[INFO] ALTA NUEVO CLIENTE");
-                        sci.solicitarCliente(listaClientes);
+                        sci.darAltaCliente(listaClientes);
+                        foreach (ClienteDto cliente in listaClientes)
+                        {
+                            Console.WriteLine(cliente.ToString());
+                        }
                         break;
                 }
             } while (!cerrarMenu);

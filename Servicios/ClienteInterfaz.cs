@@ -18,6 +18,6 @@ namespace Ejercicio1Listas.Servicios
         /// 151123 - MDN
         /// </summary>
         /// <param name="listaclientes"></param>
-        public void solicitarCliente(List<ClienteDto> listaclientes);
+        public void darAltaCliente(List<ClienteDto> listaclientes);
     }
 }

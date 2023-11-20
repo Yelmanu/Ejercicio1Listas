@@ -13,12 +13,10 @@ namespace Ejercicio1Listas.Servicios
     /// </summary>
     internal class ClienteImplementacion : ClienteInterfaz
     {
-        /// <summary>
-        /// Método para pedir los datos del cliente
-        /// 151123 - MDN
-        /// </summary>
-        /// <param name="listaclientes"></param>
-        public void solicitarCliente(List<ClienteDto> listaclientes)
+
+        //Esta forma esta bien pero está hecho de manera más "sucia"
+
+        /*public void solicitarCliente(List<ClienteDto> listaclientes)
         {
             //Instanciamos la clase donde se encuentran las variables necesitadas 
             ClienteDto cliente = new ClienteDto();
@@ -46,6 +44,49 @@ namespace Ejercicio1Listas.Servicios
             //Guardamos los datos del cliente 
             listaclientes.Add(cliente);
             Console.WriteLine(cliente.ToString());
+        }*/
+        /// <summary>
+        /// Método que se usa para dar de alta a un nuevo cliente
+        /// 201123 - MDN
+        /// </summary>
+        /// <param name="listaClientes"></param>
+        public void darAltaCliente(List<ClienteDto> listaClientes)
+        {
+            //Creo un nuevo cliente 
+            ClienteDto cliente = crearNuevoCliente();
+
+            //Añado el cliente creado a la lista
+            listaClientes.Add(cliente);
+            
+        }
+
+        /// <summary>
+        /// Método para pedir todos los datos de un nuevo cliente
+        /// 201123 - MDN
+        /// </summary>
+        /// <returns></returns>
+        private ClienteDto crearNuevoCliente()
+        {
+            ClienteDto nuevoCliente = new ClienteDto();
+
+            Console.WriteLine("Introduzca el ID: ");
+            nuevoCliente.IdCliente = Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("Introduzca el nombre: ");
+            nuevoCliente.NombreCliente = Console.ReadLine();
+            Console.WriteLine("Introduzca los apellidos: ");
+            nuevoCliente.ApellidosCliente = Console.ReadLine();
+            Console.WriteLine("Introduzca el DNI: ");
+            nuevoCliente.DniCliente = Console.ReadLine();
+            Console.WriteLine("Introduzca el email: ");
+            nuevoCliente.EmailCliente = Console.ReadLine();
+            Console.WriteLine("Introduzca el número de teléfono");
+            nuevoCliente.TlfCliente = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Introduzca la fecha de nacimiento: ");
+            nuevoCliente.FchNacimientoCliente = Console.ReadLine();
+            Console.WriteLine("Introduzca la fecha de alta: ");
+            nuevoCliente.FchAltaCliente = Console.ReadLine();
+
+            return nuevoCliente;
         }
     }
 }
