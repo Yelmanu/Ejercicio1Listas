@@ -17,5 +17,12 @@ namespace Ejercicio1Listas.Servicios
         /// 151123 - MDN
         /// </summary>
         public int menu();
+
+        /// <summary>
+        /// Método para pedir el DNI de un cliente
+        /// 281123 - MDN
+        /// </summary>
+        /// <returns></returns>
+        public string pedirDni();
     }
 }

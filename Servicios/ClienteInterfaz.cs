@@ -18,6 +18,20 @@ namespace Ejercicio1Listas.Servicios
         /// 151123 - MDN
         /// </summary>
         /// <param name="listaclientes"></param>
-        public void darAltaCliente(List<ClienteDto> listaclientes);
+        public void darAltaCliente(List<ClienteDto> listaClientes);
+
+        /// <summary>
+        /// Método para borrar cliente mediante DNI
+        /// 281123 - MDN
+        /// </summary>
+        /// <param name="listaClientes"></param>
+        public void borrarCliente(List<ClienteDto> listaClientes);
+
+        /// <summary>
+        /// Método para modificar clientes buscados por DNI
+        /// 281123 - MDN
+        /// </summary>
+        /// <param name="listaClientes"></param>
+        public void modificarCliente(List<ClienteDto> listaClientes);
     }
 }
